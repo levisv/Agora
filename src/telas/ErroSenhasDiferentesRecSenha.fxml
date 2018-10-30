@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="150.0" prefWidth="380.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControllerErroSenhasDiferentesRecSenha">
+   <children>
+      <Pane prefHeight="150.0" prefWidth="380.0">
+         <children>
+            <ImageView accessibleText="Imagem com um ponto de exclamação, símbolo para informar erro." fitHeight="37.0" fitWidth="37.0" layoutX="28.0" layoutY="34.0">
+               <image>
+                  <Image url="@../imagens/exclamation-button.png" />
+               </image>
+            </ImageView>
+            <Text accessibleText="Suas senhas informadas não correspondem. Volte e digite novamente." focusTraversable="true" layoutX="81.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Suas senhas informadas estão diferentes!" wrappingWidth="259.955078125">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Button fx:id="btnRecuperarSenha" accessibleText="Clique aqui para voltar para a Tela de Recuperação de Senha e preencha novamente os campos." layoutX="119.0" layoutY="97.0" minHeight="25.0" mnemonicParsing="false" onAction="#telaRecuperarSenha" onKeyPressed="#buttonPressed" prefHeight="27.0" prefWidth="143.0" style="-fx-background-color: #b93026;" text="OK" textFill="WHITE" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
